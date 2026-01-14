@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Begum Ge ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AUDIO: plays once from start to finish -->
+  <audio id="bgm">
+    <source src="music/love.mp3" type="audio/mpeg">
+  </audio>
+
+<audio id="clickSound">
+  <source src="music/click.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="heartbeat">
+  <source src="music/heartbeat.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sparkleSound">
+  <source src="music/sparkle.mp3" type="audio/mpeg">
+</audio>
+
+
+
+  <!-- Floating hearts container -->
+  <div id="hearts-container"></div>
+
+  <!-- SECTIONS -->
+  <section id="home" class="section active">
+    <div class="center">
+      <h1> 
+        <span class="glow" id="typing">
+         <span class="word">Hey</span>
+         <span class="word">Begum</span>
+         <span class="word">Ge ❤️</span>
+        </span>
+      <p class="subtitle">I made this to say.....Thank You ❤️</p>
+      <div class="buttons">
+        <button class="btn" onclick="showSection('memories')">Why You Are Special ✨</button>
+        <button class="btn" onclick="showSection('gallery')">My Favourite 📸</button>
+        <button class="btn" onclick="showSection('love')">One Last Thing 💌</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="memories" class="section">
+    <div class="card">
+      <h1>Why You Mean Everything To Me 💖</h1>
+      <p>Thank you for your patience.</p>
+      <p>Thank you Meri Pyari si Jann mujhe Pyar krne k liye. Mujh pr Trust krny k liye.</p>
+      <p>Mai apse Apni Pyari Farwaa, Apni Pyari si Jaann Se buht pyar krta hu or krta raho ga.</p>
+      <p>Thank you for understanding me.</p>
+      <p>Thank you for choosing me every day.</p>
+      <p>I Love You Meri Pyari FARWAA Jaann, I Love You So Much.</p>
+      <p>Thank You Meri Life Mai Anay K Liye Mera Pyara BABY.</p>
+      <p class="highlight">Begum Ge, you are my comfort, my peace, my forever ❤️</p>
+      <button class="btn small" onclick="showSection('home')">Back</button>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h1 class="center">Moments I’ll Never Forget Meri Cute Si Farwaa Jaann 💞</h1>
+    <div class="gallery">
+      <img src="images/photo1.jpg">
+      <img src="images/photo2.jpg">
+      <img src="images/photo3.jpg">
+    </div>
+    <div class="center">
+      <p class="note">Every photo holds a piece of my heart ❤️</p>
+      <button class="btn small" onclick="showSection('home')">Back</button>
+    </div>
+  </section>
+
+  <section id="love" class="section">
+    <div class="card">
+      <h1>Begum Ge 💖</h1>
+      <p>If love had a face, it would be yours.<br>
+         If peace had a feeling, it would be you.</p>
+      <p>Thank you for loving me when I was difficult.<br>
+         Thank you for staying when you didn’t have to.</p>
+      <p class="highlight">I don’t promise perfection, but I promise loyalty, effort, and a heart that belongs to you ❤️</p>
+      <p>Farwa, ever since we met on 5 November 2025, my world has been brighter and full of joy.
+Begum Ge, your smile is the reason my heart feels at home every single day.
+I treasure every little moment we share, every laugh, every hug, and every word.
+You are my safe place, my happiness, and the love I never knew I deserved.
+I promise to keep cherishing you forever, Farwa, my Begum Ge ❤️</p>
+      <h2>I Love You, Begum Ge ❤️</h2>
+      <button class="btn small" onclick="showSection('home')">Back</button>
+      <button class="btn small" onclick="loveEffect()">I Love You ❤️</button>
+    </div>
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
