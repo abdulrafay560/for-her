@@ -60,6 +60,7 @@ document.querySelectorAll(".gallery img").forEach(img => {
   img.addEventListener("click", () => {
     sparkleSound.currentTime = 0;
     sparkleSound.play();
+    sparkleSound.volume = 0.4;
 
     if (navigator.vibrate) {
       navigator.vibrate(20); // soft tap
@@ -74,3 +75,4 @@ function showSection(id) {
   document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
   document.getElementById(id).classList.add("active");
 }
+
