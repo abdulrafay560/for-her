@@ -24,7 +24,7 @@ setInterval(() => {
 
 // MUSIC PLAY ONCE
 const bgm = document.getElementById("bgm");
-bgm.volume = 0.2;
+bgm.volume = 0.15;
 window.addEventListener("click", () => { if (bgm.paused) bgm.play(); });
 
 document.querySelectorAll("button, .btn").forEach(btn => {
