@@ -17,7 +17,7 @@ setInterval(() => {
   heart.className = "heart";
   heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
   heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = Math.random() * 80 + 15 + "px";
+  heart.style.fontSize = Math.random() * 120 + 15 + "px";
   document.body.appendChild(heart);
   setTimeout(() => heart.remove(), 6000);
 }, 400);
